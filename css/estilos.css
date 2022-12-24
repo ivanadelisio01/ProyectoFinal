@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62,40%;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  background-color: white;
+  min-height: 100vh;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  margin: 20px auto 5px auto;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+  line-height: 110%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+h4 {
+  color: white;
+  line-height: 180%;
+  font-size: 12px;
+font-weight: 100;
+margin: 0px;
+text-align: center;
+}
+
+.titulotramites {
+  text-decoration: underline;
+}
+
+
+
+header {
+  padding: 10px 20px 10px 20px;
+ 
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: black;
+}
+main {
+  padding: auto;
+  
+}
+
+.tramites {
+
+    width: 32%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    background: #0ca4ac;
+    border-radius: 10px;
+    transition: 0.9;
+    color: white;
+    padding: 5px;
+
+}
+.imagenbox {
+  width: 250px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .imagenbox {
+    width: 150px;
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .imagenbox {
+    width: 200px;
+    height: auto;
+  }
+}
+.tramites:hover {
+  text-shadow: 0 0 10px black;
+}
+
+@media (max-width: 800px){
+  .tramites{
+      width: 100%;
+  }
+}
+@media (max-width: 600px){
+  .tramites{
+      width: 85%;
+      display: block;
+  }
+  .tramites{
+      width: 100%;
+      margin-bottom: 4%;
+  }
+}
+
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  color: #f3f3f3;
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+} 
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+nav ul li {
+  margin: 0px 30px 0px 30px;
+}
+
+footer {
+  background-color: #1c1c1c;
+}
+
+.subrayado {
+  background-image: linear-gradient(transparent 0%, transparent 98.4%, white 94%, black 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 400ms;
+}
+
+.subrayado:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+.container{
+  display: flex;
+  width: 920px;
+  height: auto;
+  margin: 30px auto;
+}
+.box{
+  width: 32%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-right: 1%;
+  background: white;
+  border-radius: 10px;
+  transition: 0.9;
+}
+.box:hover{
+  box-shadow: 0 0 11px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px){
+  .container{
+      width: 100%;
+  }
+}
+@media (max-width: 600px){
+  .container{
+      width: 85%;
+      display: block;
+  }
+  .box{
+      width: 100%;
+      margin-bottom: 4%;
+  }
+}
+.parrafo {
+  width: auto;
+}
+.imagennosotros {
+  width: 360px;
+  height: auto;
+}
+
+
+.formulario {
+  padding: 15px;
+  margin: 30px;
+}
+
+footer {
+  margin-top: auto;
+}
+footer svg {
+  margin: 10px 5px 10px 5px;
+}
+footer .atencioncomercial {
+  grid-area: atencioncomercial;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .atencincomercial {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  footer .atencioncomercial {
+    text-align: left;
+  }
+}
+footer .imagenesredes {
+  grid-area: imagenredes;
+}
+footer .confidencial {
+  grid-area: confidencial;
+}
+@media (min-width: 768px) {
+  footer .partefooter {
+    display: grid;
+    grid-template-areas: "atencioncomercial imagenredes" "atencioncomercial confidencial";
+  }
+}
+@media (min-width: 1024px) {
+  footer .partefooter {
+    display: grid;
+    grid-template-areas: "atencioncomercial imagenredes confidencial";
+  }
+}
+.containerplanes{
+  width: 90%;
+  max-width:900px;
+  margin: auto;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tabla{
+  width: 33%;
+  height: 550px;
+  margin: auto;
+  border:1px solid #343759;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 0px  #343759;
+  padding: 60px;
+  text-align: center;
+  flex-grow: 1;
+  color: #343759;
+}
+
+.tabla>h2{
+  font-size:30px;
+  margin-bottom:35px;
+}
+
+.tabla img{
+  width: 64px;
+  margin-bottom:35px;
+}
+
+.tabla > h3{
+  font-size:30px;
+  margin-bottom: 20px;
+}
+
+.tabla > p{
+  display: block;
+  margin-bottom:20px;
+}
+
+.boton{
+  display:inline-block;
+  width: 150px;
+  padding:12px;
+  background: #0db4da;
+  text-decoration: none;
+  color: white;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin: auto;
+}
+
+.tabla:hover{
+  background: black;
+  color: #f1f1f2;
+  transition: .5s all;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+  .tabla{
+      width: 45%;
+      max-width:none;
+      margin-bottom: 40px;
+      flex-grow: initial;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .tabla{
+      width: 45%;
+      padding:30px;
+  }
+  .tabla > h2{
+      margin-top:40px;
+  }
+}
+
+@media screen and (max-width:550px){
+  .tabla{
+      width: 85%;
+      padding: 20px;
+  }
+}
+
+.contacto {
+  text-align: center;
+  text-decoration: underline;
+} 
+
+form {
+  width: 80%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 5%;
+  border-color: black;
+  padding: 10px 25px 10px 25px;
+}
+@media (min-width: 550px) {
+  form {
+    width: 90%;
+  }
+}
+@media (min-width: 700px) {
+  form {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  form {
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=estilos.css.map */

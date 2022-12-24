@@ -1,0 +1,18 @@
+.informacion {
+    .container{
+        display: flex;
+        width: 920px;
+        height: auto;
+        margin: 30px auto;
+    }
+    .box{
+        width: 32%;
+        height: auto;
+        border: 1px solid #ccc;
+        margin-right: 1%;
+        background: white;
+        border-radius: 10px;
+        transition: 0.9;
+    }
+}
+

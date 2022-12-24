@@ -1,0 +1,38 @@
+footer {
+    margin-top: 50px;
+}
+footer svg {
+    margin: 10px 5px 10px 5px;
+}
+footer .atencioncomercial {
+    grid-area: atencioncomercial;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    footer .atencincomercial {
+    text-align: left;
+    }
+}
+@media (min-width: 1024px) {
+    footer .atencioncomercial {
+    text-align: left;
+    }
+}
+footer .imagenesredes {
+    grid-area: imagenredes;
+}
+footer .confidencial {
+    grid-area: confidencial;
+}
+@media (min-width: 768px) {
+    footer .partefooter {
+    display: grid;
+grid-template-areas: "atencioncomercial imagenredes" "atencioncomercial confidencial";
+    }
+}
+@media (min-width: 1024px) {
+footer .partefooter {
+display: grid;
+grid-template-areas: "atencioncomercial imagenredes confidencial";
+    }
+}
